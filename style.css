@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Quicksand", sans-serif;
+}
+body {
+  background-image: url("https://www.hitbullseye.com/images/school.svg");
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  padding: 0 8px;
+  justify-content: center;
+}
+/* hr{
+    width: 90%;
+    align-items: center;
+} */
+.wrapper {
+  width: 430px;
+  background: #fff;
+  border-radius: 13px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.wrapper h1 {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 20px 25px;
+  border-bottom: 1px solid #ccc;
+}
+.wrapper .content {
+  margin: 23px 23px 33px;
+}
+.content .inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.inputs input {
+  height: 57px;
+  width: 56px;
+  margin: 4px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #2bffd5;
+  text-align: center;
+  border-radius: 5px;
+  background: none;
+  pointer-events: none;
+  text-transform: uppercase;
+  border: 1px solid #b5b5b5;
+}
+.typing-input {
+  opacity: 0;
+  z-index: -999;
+  /* position: relative; */
+  position: absolute;
+  pointer-events: none;
+}
+.inputs input:first-child {
+  margin-left: 0px;
+}
+.content .details {
+  margin: 20px 0 25px;
+}
+.details p {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+.content .reset-btn {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  padding: 15px 0;
+  font-size: 17px;
+  border-radius: 5px;
+  background: #1bb295;
+  transition: all 0.3s;
+}
+.content .reset-btn:hover {
+  background: #e591ff;
+  color: black;
+}
